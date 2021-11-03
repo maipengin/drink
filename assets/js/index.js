@@ -30,21 +30,21 @@ function fadeAnime(){
       pauseOnHover: false,//オンマウスでスライドを一時停止させるかどうか。初期値はtrue。
       pauseOnFocus: false,//フォーカスした際にスライドを一時停止させるかどうか。初期値はtrue。
       cssEase: 'linear',//動き方。初期値はeaseですが、スムースな動きで見せたいのでlinear
-      slidesToShow: 5,//スライドを画面に4枚見せる
+      slidesToShow: 4,//スライドを画面に4枚見せる
       slidesToScroll: 1,//1回のスライドで動かす要素数
       responsive: [
         {
-        breakpoint: 769,//モニターの横幅が769px以下の見せ方
-        settings: {
-          slidesToShow:3,//スライドを画面に2枚見せる
+          breakpoint: 769,//モニターの横幅が769px以下の見せ方
+          settings: {
+            slidesToShow:3,//スライドを画面に2枚見せる
+          }
+        },
+        {
+          breakpoint: 426,//モニターの横幅が426px以下の見せ方
+          settings: {
+            slidesToShow: 1.5,//スライドを画面に1.5枚見せる
+          }
         }
-      },
-      {
-        breakpoint: 426,//モニターの横幅が426px以下の見せ方
-        settings: {
-          slidesToShow: 1.5,//スライドを画面に1.5枚見せる
-        }
-      }
     ]
     });
 
